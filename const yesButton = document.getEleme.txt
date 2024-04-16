@@ -1,0 +1,15 @@
+const yesButton = document.getElementById('yes-button');
+const noButton = document.getElementById('no-button');
+const message = document.getElementById('message');
+
+yesButton.addEventListener('click', () => {
+  message.textContent = "Wonderful! Get ready for a night under the moonlight... ";
+});
+
+noButton.addEventListener('click', () => {
+  message.textContent = "Wait, what? But click Yes for a magical evening with me! ";
+  // Redirect to the same page after a short delay (optional playful nudge)
+  setTimeout(() => {
+    window.location.href = window.location.href;
+  }, 2000);  // Redirect after 2 seconds
+});
